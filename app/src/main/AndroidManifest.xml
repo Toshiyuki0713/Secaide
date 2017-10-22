@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dotinstall.secaide">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,21 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.dotinstall.secaide.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HealthCareData">
-            <intent-filter>
+        <activity android:name="com.dotinstall.secaide.HealthCareData">
+
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Koredake"></activity>
+        <activity android:name="com.dotinstall.secaide.PostLoginActivity" android:label="User Information"></activity>
+        <activity android:name="com.dotinstall.secaide.Koredake" android:label="Koredake Information"></activity>
+        <activity android:name="com.dotinstall.secaide.Biposi" android:label="Biposi Information"></activity>
+
     </application>
 
 </manifest>
